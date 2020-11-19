@@ -10,12 +10,13 @@
 > https://www.odoo.com/documentation/13.0/reference/orm.html#create-update
 
 ## Partner / contact
+### Odoo: res.partner
 | Desc | Odoo | Prestashop | Note
 |--|--|--|--|
 | nom | **name** | name | *
 | nom complet | display_name | name | champ calculé (ro)
 | genre du client | **title** | id_gender | champ relationnel, cf. res.partner.title
-| parent | parent_id | Partner |
+| parent | parent_id | Partner | champ relationnel, cf. res.partner
 | groupe du client | partner_group_id | |
 | langue du client| lang | |
 | nom de la societe du client / adresse | commercial_company_name | company |
@@ -25,7 +26,7 @@
 | site web | website | website |
 | actif / visible | active | active |
 | position fiscale du client | property_account_position_id | id_position_fiscale_odoo |
-| groupe | **partner_group_id** | | groupe |
+| groupe | **partner_group_id** | | champ relationnel, cf. res.partner.group |
 | adresse: pays | **country_id** | pays | champ relationnel, cf. res.country
 | adresse: état / province | state_id | | champ relationnel, cf. res.country.state |
 | adresse: rue | street | address1 |
